@@ -1,0 +1,29 @@
+Sivukartta ja sisältö
+Merenranta Makers – harrastekerho / maker-tila
+
+Etusivu
+    Mikä Maker-tila? (selitys palvelusta + kuva)
+    Seuraava tapahtuma
+    CTA tutustumiskäyntiin (call to action)
+
+Tilat
+    kuvaukset työpisteistä ja laitteista (3D-tulostin, laserleikkuri, puupaja jne.)
+        kuvitus aiheen mukaan
+
+Tapahtumat
+    Staattinen lista tulevista tapahtumista ja kursseista
+        Avoimet pajapäivät
+        Kurssit
+    Ohjaa myös yhteydenottolomakkeelle / varauskalenteriin
+
+Säännöt
+
+Jäsenyys
+    miten liittyä, mitä jäsenyys sisältää, hinnat
+
+Ota yhteyttä
+    lomake (kysymykset, ilmoittautuminen tapahtumaan, ideat)
+    varauskalenteri? (ulkoinen järjestelmä)
+    Karttalinkki ja saapumisohjeet (julkinen liikenne, pysäköinti…)
+
+
