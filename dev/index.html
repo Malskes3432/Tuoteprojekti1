@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="RYHMÄ-9">
     <title>Etusivu - Merenranta Makers</title>
-    <meta name="description" content="Merenranta Makers on tamperelainen DIY-kerhotila - Monipuolinen harrastaminen ja yhdessä tekeminen.">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header class="site-header">
         <div class="container header-flex">
             <div class="logo">Merenranta Makers</div>
-            
+
             <button class="mobile-menu-btn" aria-label="Avaa valikko">☰</button>
-            
+
             <nav class="main-nav">
                 <ul>
                     <li><a href="tilat.html">TILAT JA PALVELUT</a></li>
                     <li><a href="tapahtumat.html">TAPAHTUMAT</a></li>
-                    <li><a href="#">JÄSENYYS</a></li>
-                    <li><a href="#">OTA YHTEYTTÄ</a></li>
+                    <li><a href="jäsenyys.html">JÄSENYYS</a></li>
+                    <li><a href="form.html">OTA YHTEYTTÄ</a></li>
+                    <li><a href="galleria.html">GALLERIA</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
+
         <section class="introduction bg-grey">
             <div class="container text-center">
                 <h1>Mikä Merenranta Makers?</h1>
@@ -42,37 +42,45 @@
 
         <section class="events-section bg-white">
             <div class="container">
-                <h2>Mitä tapahtumia on tulossa?</h2>
+                <h2>Tulevat tapahtumat</h2>
+
                 <div class="events-grid">
-                    
+
                     <article class="event-card">
-                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80" alt="Avoin työpajailta Merenranta Makersissa" class="card-image">
-                        
+                        <div class="card-image"
+                             style="background-image: url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80');">
+                            Työpaja
+                        </div>
+
                         <div class="card-content">
                             <h3>Avoin työpajailta</h3>
-                             <time datetime="2026-04-18">torstai 18.4. klo 17.00–20.00</time> 
+                            <p>Torstai 18.4. klo 17.00–20.00</p>
                             <a href="tapahtumat.html" class="btn">Lue lisää</a>
                         </div>
                     </article>
 
                     <article class="event-card">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="3D-suunnittelun alkeet Merenranta Makersissa" class="card-image">
-                            
-                        
+                        <div class="card-image"
+                             style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80');">
+                            Kurssi
+                        </div>
+
                         <div class="card-content">
                             <h3>3D-suunnittelun alkeet</h3>
-                            <time datetime="2026-04-20">torstai 20.4. klo 12.00–15.00</time> 
+                            <p>Lauantai 20.4. klo 12.00–15.00</p>
                             <a href="tapahtumat.html" class="btn">Lue lisää</a>
                         </div>
                     </article>
 
                     <article class="event-card">
-                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80" alt="Yhteisöilta uusille jäsenille Merenranta Makersissa" class="card-image">
-                            
-                        
+                        <div class="card-image"
+                             style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80');">
+                            Yhteisöilta
+                        </div>
+
                         <div class="card-content">
                             <h3>Yhteisöilta uusille jäsenille</h3>
-                            <time datetime="2026-04-24">torstai 24.4. klo 18.00–19.30</time> 
+                            <p>Keskiviikko 24.4. klo 18.00–19.30</p>
                             <a href="tapahtumat.html" class="btn">Lue lisää</a>
                         </div>
                     </article>
@@ -85,12 +93,13 @@
             <div class="container">
                 <h2>Kiinnostuitko?</h2>
                 <p>
-                    Tule tutustumaan Merenranta Makersiin! Ilmoittaudu
-                    <a href="#">yhteydenottolomakkeella</a> ja esittelemme sinulle tilat,
-                    laitteet ja mahdollisuudet osallistua toimintaan.
+                    Tule tutustumaan Merenranta Makersiin!
+                    Ilmoittaudu <a href="form.html">yhteydenottolomakkeella</a>
+                    ja esittelemme sinulle tilat, laitteet ja mahdollisuudet osallistua toimintaan.
                 </p>
             </div>
         </section>
+
     </main>
 
     <footer class="site-footer">
@@ -103,7 +112,15 @@
             </address>
         </div>
     </footer>
+<script>
+const btn = document.querySelector(".mobile-menu-btn");
+const nav = document.querySelector(".main-nav");
 
+if (btn) {
+    btn.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+}
+</script>
 </body>
 </html>
-
