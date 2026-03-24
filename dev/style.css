@@ -154,6 +154,7 @@ p {
     cursor: pointer;
     margin-top: 10px;
     display: block;
+    text-decoration: none;
 }
 
 .site-footer {
