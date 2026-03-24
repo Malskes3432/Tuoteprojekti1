@@ -123,6 +123,9 @@ p {
     color: #fff;
     font-weight: bold;
     font-size: 20px;
+    margin: 0 auto;
+    width: 90%;
+    object-fit: cover;
 }
 
 .card-image::after {
@@ -150,6 +153,7 @@ p {
     border-radius: 25px;
     cursor: pointer;
     margin-top: 10px;
+    display: block;
 }
 
 .site-footer {
