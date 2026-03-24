@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapahtumat - Merenranta Makers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-flex">
+        <div class="logo">Merenranta Makers</div>
+        <button class="mobile-menu-btn" aria-label="Avaa valikko">☰</button>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">ETUSIVU</a></li>
+                <li><a href="tilat.html">TILAT JA PALVELUT</a></li>
+                <li><a href="tapahtumat.html">TAPAHTUMAT</a></li>
+                <li><a href="jäsenyys.html">JÄSENYYS</a></li>
+                <li><a href="form.html">OTA YHTEYTTÄ</a></li>
+                <li><a href="galleria.html">GALLERIA</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="content-section bg-grey">
+    <div class="container">
+        <h1>Tapahtumat ja kurssit</h1>
+        <p>
+            Järjestämme kursseja, työpajoja ja avoimia pajapäiviä.
+            Tervetuloa oppimaan ja tekemään yhdessä!
+        </p>
+    </div>
+</section>
+
+<section class="featured-event">
+    <div class="container featured-flex">
+        <div class="featured-image"></div>
+        <div class="featured-text">
+            <h2>Avoin työpajailta</h2>
+            <p class="event-date">Torstai 18.4. klo 17.00–20.00</p>
+            <p>
+                Tule tutustumaan Merenranta Makers -tilaan, laitteisiin ja yhteisöön.
+                Voit kokeilla 3D-tulostinta, työkaluja ja nähdä mitä maker-tilassa voi tehdä.
+            </p>
+            <a href="form.html" class="btn">Ilmoittaudu</a>
+        </div>
+    </div>
+</section>
+
+<section class="events-list-section bg-grey">
+    <div class="container">
+        <h2>Muut tapahtumat</h2>
+
+        <div class="event-row">
+            <div>
+                <h3>Yhteisöilta uusille jäsenille</h3>
+                <p>24.4. klo 18.00–19.30</p>
+            </div>
+            <a href="form.html" class="btn">Ilmoittaudu</a>
+        </div>
+
+        <div class="event-row">
+            <div>
+                <h3>3D-tulostuksen alkeet</h3>
+                <p>20.4. klo 12.00–15.00</p>
+            </div>
+            <a href="form.html" class="btn">Ilmoittaudu</a>
+        </div>
+
+        <div class="event-row">
+            <div>
+                <h3>Puutyöpaja</h3>
+                <p>5.6.2026 klo 15–19</p>
+            </div>
+            <a href="form.html" class="btn">Ilmoittaudu</a>
+        </div>
+
+        <div class="event-row">
+            <div>
+                <h3>Laserleikkuri workshop</h3>
+                <p>12.6.2026 klo 17–20</p>
+            </div>
+            <a href="form.html" class="btn">Ilmoittaudu</a>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-flex">
+        <div class="logo bg-white-logo">Merenranta Makers</div>
+        <p>Tilat käytettävissä klo 8–22 joka päivä</p>
+        <address>
+            Rantakatu 12<br>
+            33101 Tampere
+        </address>
+    </div>
+</footer>
+
+<script>
+const btn = document.querySelector(".mobile-menu-btn");
+const nav = document.querySelector(".main-nav");
+
+if(btn){
+    btn.addEventListener("click", () => {
+        if(nav.style.display === "block"){
+            nav.style.display = "none";
+        } else {
+            nav.style.display = "block";
+        }
+    });
+}
+</script>
+
+</body>
+</html>

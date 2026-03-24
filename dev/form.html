@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yhteydenotto - Merenranta Makers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-flex">
+        <div class="logo">Merenranta Makers</div>
+
+        <button class="mobile-menu-btn" aria-label="Avaa valikko">☰</button>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">ETUSIVU</a></li>
+                <li><a href="tilat.html">TILAT JA PALVELUT</a></li>
+                <li><a href="tapahtumat.html">TAPAHTUMAT</a></li>
+                <li><a href="jäsenyys.html">JÄSENYYS</a></li>
+                <li><a href="galleria.html">GALLERIA</a></li>
+                <li><a href="form.html">OTA YHTEYTTÄ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="content-section bg-grey">
+    <div class="container">
+        <h1>Yhteystiedot</h1>
+        <p>
+            Ota meihin yhteyttä täyttämällä lomake.
+            Vastaamme sinulle mahdollisimman pian. 
+        </p>
+    </div>
+</section>
+
+<section class="content-section bg-white">
+    <div class="container">
+
+        <form id="contactForm" class="form-box">
+            <input type="text" placeholder="Etunimi" required>
+            <input type="text" placeholder="Sukunimi" required>
+            <input type="tel" placeholder="Puhelinnumero" required>
+            <input type="email" placeholder="Sähköposti" required>
+            <input type="text" placeholder="Osoite">
+            <textarea placeholder="Lisätietoja"></textarea>
+            <button type="submit" class="btn">Lähetä</button>
+        </form>
+
+        <div id="thankYou" class="thank-you" style="display:none;">
+            Kiitos! Otamme sinuun yhteyttä pian.
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-flex">
+        <div class="logo bg-white-logo">Merenranta Makers</div>
+        <p>Tilat käytettävissä klo 8–22 joka päivä</p>
+        <address>
+            Rantakatu 12<br>
+            33101 Tampere
+        </address>
+    </div>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    document.getElementById("contactForm").style.display = "none";
+    document.getElementById("thankYou").style.display = "block";
+});
+</script>
+
+<script>
+const btn = document.querySelector(".mobile-menu-btn");
+const nav = document.querySelector(".main-nav");
+
+if(btn){
+    btn.addEventListener("click", () => {
+        if(nav.style.display === "block"){
+            nav.style.display = "none";
+        } else {
+            nav.style.display = "block";
+        }
+    });
+}
+</script>
+
+</body>
+</html>

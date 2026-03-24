@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria - Merenranta Makers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-flex">
+        <div class="logo">Merenranta Makers</div>
+
+        <button class="mobile-menu-btn" aria-label="Avaa valikko">☰</button>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">ETUSIVU</a></li>
+                <li><a href="tilat.html">TILAT JA PALVELUT</a></li>
+                <li><a href="tapahtumat.html">TAPAHTUMAT</a></li>
+                <li><a href="jäsenyys.html">JÄSENYYS</a></li>
+                <li><a href="galleria.html">GALLERIA</a></li>
+                <li><a href="form.html">OTA YHTEYTTÄ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="content-section bg-grey">
+    <div class="container text-center">
+        <h1>Projektistamme</h1>
+        <p>
+           Merenranta Makers on luova ja yhteisöllinen työtila, jossa yhdistyvät teknologia, käsityö ja yhdessä tekeminen. 
+           Tilassamme voit työskennellä metallin, puun, elektroniikan sekä digitaalisten projektien parissa modernien työkalujen ja laitteiden avulla.
+           Projektimme tavoitteena on tarjota inspiroiva ympäristö oppimiselle, kokeilemiselle ja uusien ideoiden toteuttamiselle. 
+           Haluamme tuoda yhteen ihmisiä, jotka ovat kiinnostuneita rakentamisesta, suunnittelusta ja uuden oppimisesta – kokemustasosta riippumatta.
+        </p>
+    </div>
+</section>
+
+<section class="content-section bg-white">
+    <div class="container">
+        <h2 class="text-center">Kuvagalleria</h2>
+
+        <div class="gallery-scroll">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758" alt="Workshop">
+            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc" alt="Electronics">
+            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1" alt="Computer work">
+            <img src="https://static.thefabricator.com/a/staying-safe-during-grinding-1710259186.jpg" alt="Metal work">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Team work">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Wood workshop">
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789" alt="Tools">
+            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122" alt="Workshop tools">
+            <img src="https://us.images.westend61.de/0001264224pw/close-up-of-man-drilling-wood-with-a-drill-machine-in-a-workshop-CAVF64109.jpg" alt="Drilling wood">
+            <img src="https://res.cloudinary.com/rs-designspark-live/image/upload/c_limit%2Cw_829/f_auto/v1/article/20211008112711_IMG_0287_9225eb0642d48f4dfa5e805956a3046793e63e60" alt="Electronics board">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Programming">
+            <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f" alt="Laptop work">
+        </div>
+    </div>
+</section>
+
+<section class="content-section bg-grey">
+    <div class="container">
+        <h2 class="text-center">Asiakaspalautteet</h2>
+
+        <div class="reviews-grid">
+            <div class="review-card">
+                <p>
+                    "Todella hyvä työtila ja mukava yhteisö.
+                    Sain paljon apua omaan projektiini!"
+                </p>
+                <strong>– Mikko</strong>
+            </div>
+
+            <div class="review-card">
+                <p>
+                    "Paljon työkaluja ja mahdollisuuksia.
+                    Suosittelen kaikille, jotka haluavat tehdä projekteja."
+                </p>
+                <strong>– Laura</strong>
+            </div>
+
+            <div class="review-card">
+                <p>
+                    "Paras makerspace missä olen käynyt.
+                    Tulen varmasti uudestaan."
+                </p>
+                <strong>– Jari</strong>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-flex">
+        <div class="logo bg-white-logo">Merenranta Makers</div>
+        <p>Tilat käytettävissä klo 8–22 joka päivä</p>
+        <address>
+            Rantakatu 12<br>
+            33101 Tampere
+        </address>
+    </div>
+</footer>
+
+<script>
+const btn = document.querySelector(".mobile-menu-btn");
+const nav = document.querySelector(".main-nav");
+
+if(btn){
+    btn.addEventListener("click", () => {
+        if(nav.style.display === "block"){
+            nav.style.display = "none";
+        } else {
+            nav.style.display = "block";
+        }
+    });
+}
+</script>
+
+</body>
+</html>

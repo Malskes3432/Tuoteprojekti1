@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etusivu - Merenranta Makers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-flex">
+        <div class="logo">Merenranta Makers</div>
+
+        <button class="mobile-menu-btn" aria-label="Avaa valikko">☰</button>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">ETUSIVU</a></li>
+                <li><a href="tilat.html">TILAT JA PALVELUT</a></li>
+                <li><a href="tapahtumat.html">TAPAHTUMAT</a></li>
+                <li><a href="jäsenyys.html">JÄSENYYS</a></li>
+                <li><a href="form.html">OTA YHTEYTTÄ</a></li>
+                <li><a href="galleria.html">GALLERIA</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="introduction bg-grey">
+    <div class="container text-center">
+        <h1>Mikä Merenranta Makers?</h1>
+        <p>
+            Merenranta Makers on yhteisöllinen luova työtila, jossa voit oppia uutta,
+            toteuttaa omia projekteja ja tavata muita tekemisestä innostuneita ihmisiä.
+            Tarjoamme tiloja käsitöihin, pienrakenteluun, digitaaliseen suunnitteluun
+            ja yhteisiin tapahtumiin kaiken tasoisille tekijöille.
+        </p>
+    </div>
+</section>
+
+<section class="events-section bg-white">
+    <div class="container">
+        <h2>Tulevat tapahtumat</h2>
+
+        <div class="events-grid">
+
+            <article class="event-card">
+                <div class="card-image"
+                     style="background-image: url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80');">
+                    <span>Työpaja</span>
+                </div>
+
+                <div class="card-content">
+                    <h3>Avoin työpajailta</h3>
+                    <p>Torstai 18.4. klo 17.00–20.00</p>
+                    <a href="tapahtumat.html" class="btn">Lue lisää</a>
+                </div>
+            </article>
+
+            <article class="event-card">
+                <div class="card-image"
+                     style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80');">
+                    <span>Kurssi</span>
+                </div>
+
+                <div class="card-content">
+                    <h3>3D-suunnittelun alkeet</h3>
+                    <p>Lauantai 20.4. klo 12.00–15.00</p>
+                    <a href="tapahtumat.html" class="btn">Lue lisää</a>
+                </div>
+            </article>
+
+            <article class="event-card">
+                <div class="card-image"
+                     style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80');">
+                    <span>Yhteisöilta</span>
+                </div>
+
+                <div class="card-content">
+                    <h3>Yhteisöilta uusille jäsenille</h3>
+                    <p>Keskiviikko 24.4. klo 18.00–19.30</p>
+                    <a href="tapahtumat.html" class="btn">Lue lisää</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="cta-section bg-grey">
+    <div class="container">
+        <h2>Kiinnostuitko?</h2>
+        <p>
+            Tule tutustumaan Merenranta Makersiin!
+            Ilmoittaudu <a href="form.html">yhteydenottolomakkeella</a>
+            ja esittelemme sinulle tilat, laitteet ja mahdollisuudet osallistua toimintaan.
+        </p>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-flex">
+        <div class="logo bg-white-logo">Merenranta Makers</div>
+        <p>Tilat käytettävissä klo 8–22 joka päivä</p>
+        <address>
+            Rantakatu 12<br>
+            33101 Tampere
+        </address>
+    </div>
+</footer>
+
+<script>
+const btn = document.querySelector(".mobile-menu-btn");
+const nav = document.querySelector(".main-nav");
+
+if (btn) {
+    btn.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+}
+</script>
+
+</body>
+</html>
