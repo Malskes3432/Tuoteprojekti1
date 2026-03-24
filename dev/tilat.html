@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilat ja palvelut - Merenranta Makers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-flex">
+        <div class="logo">Merenranta Makers</div>
+
+        <button class="mobile-menu-btn" aria-label="Avaa valikko">☰</button>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">ETUSIVU</a></li>
+                <li><a href="tilat.html">TILAT JA PALVELUT</a></li>
+                <li><a href="tapahtumat.html">TAPAHTUMAT</a></li>
+                <li><a href="jäsenyys.html">JÄSENYYS</a></li>
+                <li><a href="form.html">OTA YHTEYTTÄ</a></li>
+                <li><a href="galleria.html">GALLERIA</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="content-section bg-grey">
+    <div class="container">
+        <h1>Tilat ja palvelut</h1>
+        <p>
+            Merenranta Makers tarjoaa monipuoliset tilat käsitöihin, rakenteluun,
+            digitaaliseen suunnitteluun ja elektroniikkaprojekteihin.
+            Tilat ovat jäsenten käytettävissä joka päivä klo 8–22.
+        </p>
+    </div>
+</section>
+
+<section class="content-section bg-white">
+    <div class="container">
+
+        <div class="tilat-row">
+            <div class="tilat-image">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Puutyöpaja">
+            </div>
+            <div class="tilat-text">
+                <a href="form.html" class="tilat-btn">Puutyöpaja</a>
+                <p>Puutyöpajassa voit sahata, hioa, porata ja rakentaa erilaisia projekteja.</p>
+            </div>
+        </div>
+
+        <div class="tilat-row">
+            <div class="tilat-image">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="3D-tulostus">
+            </div>
+            <div class="tilat-text">
+                <a href="form.html" class="tilat-btn">3D-tulostus</a>
+                <p>Tilassa on useita 3D-tulostimia sekä tietokoneita 3D-mallinnukseen.</p>
+            </div>
+        </div>
+
+        <div class="tilat-row">
+            <div class="tilat-image">
+                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80" alt="Elektroniikkapiste">
+            </div>
+            <div class="tilat-text">
+                <a href="form.html" class="tilat-btn">Elektroniikkapiste</a>
+                <p>Elektroniikkapisteessä voit juottaa ja rakentaa projekteja.</p>
+            </div>
+        </div>
+
+        <div class="tilat-row">
+            <div class="tilat-image">
+                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80" alt="Laserleikkuri">
+            </div>
+            <div class="tilat-text">
+                <a href="form.html" class="tilat-btn">Laserleikkuri</a>
+                <p>Laserleikkurilla voit leikata ja kaivertaa materiaaleja tarkasti.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="cta-section bg-grey">
+    <div class="container">
+        <h2>Haluatko käyttää tiloja?</h2>
+        <p>Liity jäseneksi tai ota yhteyttä ja tule tutustumaan tiloihin.</p>
+        <a href="jäsenyys.html" class="btn">Liity jäseneksi</a>
+        <a href="form.html" class="btn">Ota yhteyttä</a>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-flex">
+        <div class="logo bg-white-logo">Merenranta Makers</div>
+        <p>Tilat käytettävissä klo 8–22 joka päivä</p>
+        <address>
+            Rantakatu 12<br>
+            33101 Tampere
+        </address>
+    </div>
+</footer>
+
+<script>
+const btn = document.querySelector(".mobile-menu-btn");
+const nav = document.querySelector(".main-nav");
+
+if(btn){
+    btn.addEventListener("click", () => {
+        if(nav.style.display === "block"){
+            nav.style.display = "none";
+        } else {
+            nav.style.display = "block";
+        }
+    });
+}
+</script>
+
+</body>
+</html>
