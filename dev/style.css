@@ -152,6 +152,9 @@ p {
     font-weight: bold;
     font-size: 20px;
     transition: transform 0.4s ease;
+    margin: 0 auto;
+    width: 90%;
+    object-fit: cover;
 }
 
 .event-card:hover .card-image {
@@ -179,6 +182,8 @@ p {
     cursor: pointer;
     margin-top: 10px;
     transition: all 0.3s ease;
+    display: block;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -431,4 +436,32 @@ p {
         text-align: center;
         gap: 20px;
     }
+}
+
+.featured-text .btn { /* Avoin työpajailta ilmottautumis nappi (iso) */
+    padding: 18px 60px;
+    font-size: 1.2rem;
+    display: inline-block;
+    background: #222;
+    color: #fff;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+
+.featured-text .btn:hover { /* napin reaktio kun hiiri vedetään päälle */
+    background: #111; 
+    transform: translateY(-4px); 
+    
+}
+
+.event-row .btn { /* tapahtuma sivun pienet napit */
+    transition: transform 0.3s ease;
+}
+
+.event-row .btn:hover { /* tapahtuma sivun pienet napit reaktio */
+    transform: translateY(-5px); 
 }
