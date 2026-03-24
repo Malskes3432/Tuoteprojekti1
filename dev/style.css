@@ -245,3 +245,31 @@ p {
     padding: 25px 0;
     border-bottom: 1px solid #ccc;
 }
+
+.featured-text .btn { /* Avoin työpajailta ilmottautumis nappi (iso) */
+    padding: 18px 60px;
+    font-size: 1.2rem;
+    display: inline-block;
+    background: #222;
+    color: #fff;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+
+.featured-text .btn:hover { /* napin reaktio kun hiiri vedetään päälle */
+    background: #111; 
+    transform: translateY(-4px); 
+    
+}
+
+.event-row .btn { /* tapahtuma sivun pienet napit */
+    transition: transform 0.3s ease;
+}
+
+.event-row .btn:hover { /* tapahtuma sivun pienet napit reaktio */
+    transform: translateY(-5px); 
+}
