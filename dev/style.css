@@ -260,10 +260,12 @@ p {
     text-decoration: none;
     font-weight: bold;
     margin-bottom: 10px;
+    transition: all 0.3s ease;
 }
 
 .tilat-btn:hover {
-    background-color: #444;
+    background-color: #3a6f73;
+    transform: translateY(-4px); 
 }
 
 /* Form */
@@ -454,7 +456,7 @@ p {
 
 
 .featured-text .btn:hover { /* napin reaktio kun hiiri vedetään päälle */
-    background: #111; 
+    background-color: #3a6f73; 
     transform: translateY(-4px); 
     
 }
