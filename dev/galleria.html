@@ -1,127 +1,208 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galleria - Merenranta Makers</title>
+    <title>Galleria – Merenranta Makers</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header class="site-header">
-    <div class="container header-flex">
-        <div class="logo">Merenranta Makers</div>
-
-        <button class="mobile-menu-btn" aria-label="Avaa valikko">☰</button>
-
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">ETUSIVU</a></li>
-                <li><a href="tilat.html">TILAT JA PALVELUT</a></li>
-                <li><a href="tapahtumat.html">TAPAHTUMAT</a></li>
-                <li><a href="jäsenyys.html">JÄSENYYS</a></li>
-                <li><a href="form.html">OTA YHTEYTTÄ</a></li>
-                <li><a href="galleria.html">GALLERIA</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<main>
-
-<section class="content-section bg-grey">
-    <div class="container text-center">
-        <h1>Projektistamme</h1>
-        <p>
-           Merenranta Makers on luova ja yhteisöllinen työtila, jossa yhdistyvät teknologia, käsityö ja yhdessä tekeminen. 
-           Tilassamme voit työskennellä metallin, puun, elektroniikan sekä digitaalisten projektien parissa modernien työkalujen ja laitteiden avulla.
-           Projektimme tavoitteena on tarjota inspiroiva ympäristö oppimiselle, kokeilemiselle ja uusien ideoiden toteuttamiselle. 
-           Haluamme tuoda yhteen ihmisiä, jotka ovat kiinnostuneita rakentamisesta, suunnittelusta ja uuden oppimisesta – kokemustasosta riippumatta.
-        </p>
-    </div>
-</section>
-
-<section class="content-section bg-white">
-    <div class="container">
-        <h2 class="text-center">Kuvagalleria</h2>
-
-        <div class="gallery-scroll">
-            <img src="VALOKUVAT/project.jpeg" alt="Yhteistyöprojekti työpajalla">
-            <img src="VALOKUVAT/AUTOCAD.jpeg" alt="Tekninen piirtäminen ja suunnittelu AutoCAD-ohjelmalla">
-            <img src="VALOKUVAT/laptopcoding.jpg" alt="Koodausta kannettavalla tietokoneella lähikvuassa">
-            <img src="VALOKUVAT/metalwork.jpg" alt="Metallintyöstöä verstaalla kipinöiden keskellä">
-            <img src="valokuvat/team.jpg" alt="Tiimi keskustelemassa ja työskentelemään yhdessä">
-            <img src="VALOKUVAT/wooddrilling.jpg" alt="Reiän poraaminen puuhun pylväsporakoneella">
-            <img src="valokuvat/solderingstation.jpg" alt="Elektroniikan juotosasema ja tarvittavat työkalut">
-            <img src="valokuvat/metalwelding.jpg" alt="Metallin hitsausta suojavarusteissa">
-            <img src="VALOKUVAT/carpenter.jpg" alt="Puuseppä työstämässä puumateriaalia">
-            <img src="VALOKUVAT/toolstation.jpg" alt="Verstaan työkalupiste, jossa erilaisia työkaluja ja laitteita">
-            <img src="valokuvat/laptopprogrammering.jpg" alt="Koodaus ja ohjelmointi kannettavalla tietokoneella">
-            <img src="VALOKUVAT/consolecontrollers.jpg" alt="Pelikonsolin ohjaimet ja pelaaminen yhdessä">
-        </div>
-    </div>
-</section>
-
-<section class="content-section bg-grey">
-    <div class="container">
-        <h2 class="text-center">Asiakaspalautteet</h2>
-
-        <div class="reviews-grid">
-            <div class="review-card">
-                <p>
-                    "Todella hyvä työtila ja mukava yhteisö.
-                    Sain paljon apua omaan projektiini!"
-                </p>
-                <strong>– Mikko</strong>
-            </div>
-
-            <div class="review-card">
-                <p>
-                    "Paljon työkaluja ja mahdollisuuksia.
-                    Suosittelen kaikille, jotka haluavat tehdä projekteja."
-                </p>
-                <strong>– Laura</strong>
-            </div>
-
-            <div class="review-card">
-                <p>
-                    "Paras makerspace missä olen käynyt.
-                    Tulen varmasti uudestaan."
-                </p>
-                <strong>– Jari</strong>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-grid">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="graphics/logo_dark.svg" alt="Merenranta Makers">
+                    </a>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Avaa valikko">
+                    <img src="graphics/menu.svg" alt="">
+                </button>
+                <nav class="main-nav" aria-label="Päävalikko">
+                    <ul>
+                        <li><a href="tilat.html">Tilat ja palvelut</a></li>
+                        <li><a href="tapahtumat.html">Tapahtumat</a></li>
+                        <li><a href="jasenyys.html">Jäsenyys</a></li>
+                        <li><a href="galleria.html">Galleria</a></li>
+                        <li><a href="ota-yhteytta.html">Ota yhteyttä</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </div>
-</section>
+    </header>
 
-</main>
+    <main>
+        <section class="section hero bg-medium">
+            <img src="graphics/hero-galleria.jpeg" alt="Galleria" class="hero__bg">
+            <div class="container">
+                <h1>Galleria</h1>
+            </div>
+        </section>
 
-<footer class="site-footer">
-    <div class="container footer-flex">
-        <div class="logo bg-white-logo">Merenranta Makers</div>
-        <p>Tilat käytettävissä klo 8–22 joka päivä</p>
-        <address>
-            Rantakatu 12<br>
-            33101 Tampere
-        </address>
-    </div>
-</footer>
+        <section class="section bg-light">
+            <div class="container">
+                <h2>Kuvia pajalta ja projekteista</h2>
+                <p>Kurkista Merenranta Makersin arkeen.</p>
 
-<script>
-const btn = document.querySelector(".mobile-menu-btn");
-const nav = document.querySelector(".main-nav");
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/3dprinter.jpg" alt="3D-tulostus" class="gallery-img lightbox-trigger">
+                    </div>
+                
+                    <div class="gallery-item">
+                        <img src="images/wooddrilling.jpg" alt="Puun työstöä" class="gallery-img lightbox-trigger" loading="lazy">
+                    </div>
+                
+                    <div class="gallery-item">
+                        <img src="images/project.jpeg" alt="Yhteisprojekti" class="gallery-img lightbox-trigger" loading="lazy">
+                    </div>
 
-if(btn){
-    btn.addEventListener("click", () => {
-        if(nav.style.display === "block"){
-            nav.style.display = "none";
-        } else {
-            nav.style.display = "block";
-        }
-    });
-}
-</script>
+                    <div class="gallery-item">
+                        <img src="images/consolecontrollers.jpg" alt="Peliohjaimia loungessa" class="gallery-img lightbox-trigger" loading="lazy">
+                    </div>
 
+                    <div class="gallery-item">
+                        <img src="images/laptopcoding.jpg" alt="Koodausta" class="gallery-img lightbox-trigger" loading="lazy">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/solderingstation.jpg" alt="Juottamista" class="gallery-img lightbox-trigger" loading="lazy">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/toolstation.jpg" alt="Työkaluja" class="gallery-img lightbox-trigger" loading="lazy">
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-medium">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: var(--space-l);">Asiakaspalautteet</h2>
+        
+                <div class="testimonials-grid">
+                    <blockquote class="testimonial-card">
+                        <p>"Todella hyvä työtila ja mukava yhteisö. Sain paljon apua omaan projektiini!"</p>
+                        <cite>– Mikko</cite>
+                    </blockquote>
+        
+                    <blockquote class="testimonial-card">
+                        <p>"Paljon työkaluja ja mahdollisuuksia. Suosittelen kaikille, jotka haluavat tehdä projekteja."</p>
+                        <cite>– Laura</cite>
+                    </blockquote>
+        
+                    <blockquote class="testimonial-card">
+                        <p>"Paras makerspace missä olen käynyt. Tulen varmasti uudestaan."</p>
+                        <cite>– Jari</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="graphics/logo_white.svg" alt="Merenranta Makers">
+                    </a>
+                </div>
+                <div class="footer-tagline">Tilat avoinna jäsenille klo 8–22 joka päivä</div>
+                <div class="footer-address">
+                    <address>Rantakatu 12<br>26100 Rauma</address>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="javascript:window.scrollTo(0,0)" class="back-to-top" aria-label="Palaa alkuun">
+        <img src="graphics/arrow_upward.svg" alt="Palaa alkuun">
+    </a>
+
+    <script>
+        /* --- HAMPURILAISVALIKKO --- */
+            const menuBtn = document.querySelector(".mobile-menu-btn");
+            const nav = document.querySelector(".main-nav");
+            const menuImg = menuBtn?.querySelector("img");
+
+            menuBtn?.addEventListener("click", () => {
+                const isOpen = nav.classList.toggle("active");
+                menuBtn.setAttribute("aria-expanded", isOpen);
+                if (menuImg) menuImg.src = isOpen ? "graphics/menu_close.svg" : "graphics/menu.svg";
+            });
+
+            /* --- PALAA YLÖS -NUOLIPAINIKE --- */
+            const backToTop = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop?.classList.add('show');
+                } else {
+                    backToTop?.classList.remove('show');
+                }
+            });
+
+            /* --- LIGHTBOX (gallerian kuvakatselu) --- */
+            // Luodaan katseluikkunan elementit dynaamisesti
+            const lightboxOverlay = document.createElement('div');
+            lightboxOverlay.classList.add('lightbox-overlay');
+
+            const lightboxImage = document.createElement('img');
+            lightboxImage.classList.add('lightbox-image');
+
+            const lightboxClose = document.createElement('button');
+            lightboxClose.classList.add('lightbox-close');
+            lightboxClose.innerHTML = '&times;'; // HTML-koodi X-merkille
+
+            // Kootaan ikkuna ja lisätään se bodyyn
+            lightboxOverlay.appendChild(lightboxImage);
+            lightboxOverlay.appendChild(lightboxClose);
+            document.body.appendChild(lightboxOverlay);
+
+            // Haetaan kaikki klikattavat kuvat
+            const triggers = document.querySelectorAll('.lightbox-trigger');
+
+            // Avaa katseluikkuna
+            triggers.forEach(trigger => {
+                trigger.addEventListener('click', (e) => {
+                    const imageSrc = e.target.getAttribute('src');
+                    const imageAlt = e.target.getAttribute('alt');
+
+                    lightboxImage.setAttribute('src', imageSrc);
+                    lightboxImage.setAttribute('alt', imageAlt);
+                    lightboxOverlay.classList.add('active');
+
+                    // Estetään sivun rullaus, kun ikkuna on auki
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            // Sulje katseluikkuna
+            const closeLightbox = () => {
+                lightboxOverlay.classList.remove('active');
+                document.body.style.overflow = ''; // Palautetaan rullaus
+            };
+
+            lightboxClose.addEventListener('click', closeLightbox);
+            lightboxOverlay.addEventListener('click', (e) => {
+                // Suljetaan vain, jos klikataan taustaa, ei itse kuvaa
+                if (e.target === lightboxOverlay) {
+                    closeLightbox();
+                }
+            });
+
+            // Sulje Esc-näppäimellä
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && lightboxOverlay.classList.contains('active')) {
+                    closeLightbox();
+                }
+            });
+    </script>
 </body>
+
 </html>

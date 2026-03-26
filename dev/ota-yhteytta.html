@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tapahtumat – Merenranta Makers</title>
+    <title>Ota yhteyttä – Merenranta Makers</title>
     <meta name="description" content="Tutustu Merenranta Makersin monipuolisiin DIY-tiloihin ja palveluihin Raumalla.">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -41,9 +41,9 @@
 
         <!-- ---------- HERO / INTRODUCTION ----------  -->
         <section class="section hero bg-medium">
-            <img src="graphics/hero-tapahtumat.avif" alt="Merenranta Makers - diy-työtila" class="hero__bg">
+            <img src="graphics/hero-yhteys.jpg" alt="Merenranta Makers - diy-työtila" class="hero__bg">
             <div class="container">
-                <h1>Tapahtumat ja Kurssit</h1>
+                <h1>Ota Yhteyttä</h1>
             </div>
         </section>
 
@@ -52,69 +52,47 @@
         <section class="section bg-light">
             <div class="container">
                 <div class="content-intro">
-
-
-                    <figure class="image-simple">
-                        <img src="images/peopleontable.avif" alt="Avoin työpajailta Merenranta Makersilla" loading="lazy">
-                    </figure>
-                    <h2>Avoin työpajailta</h2>
+                    <div class="container">
+                        <div class="content-intro">
+                            <h2>Yhteystiedot</h2>
                     
-                    <p>
-                        <time datetime="2026-04-18T17:00">
-                            Torstai 18.4. klo 17.00 – 20.00
-                        </time>
-                    </p>
+                            <p>
+                                Kaikki toiminnot yhdessä lomakkeessa! Ilmoittaudu tapahtumaan, liity jäseneksi tai
+                                viesti muuten vain täyttämällä oheine lomake. Vastaamme sinulle niin pian kuin vain pystymme!
+                            </p>
+
+                            <p>
+                                * = pakollinen kenttä
+                            </p>
                     
-                    <p>
-                        Tule tutustumaan Merenranta Makers -tilaan, laitteisiin ja yhteisöön.  
-                        Avoimeen työpajaan voivat osallistua kertamaksusta myös muut kuin jäsenet. Paikalla on ohjaajia ja opastusta.
-                    </p>
-
-                    <a href="ota-yhteytta.html" class="btn">Ilmoittaudu</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section bg-medium">
-            <div class="container">
-                <h2>Muut tapahtumat</h2>
-        
-                <div class="event-list-item">
-                    <div class="event-info">
-                        <h3>Yhteisöilta uusille jäsenille</h3>
-                        <p>
-                            <time datetime="2026-04-24T18:00">
-                                Keskiviikko 24.4. klo 18.00 – 19.30
-                            </time>
-                        </p>
+                            <section class="section bg-light">
+                                <div class="container">
+                                    <form action="#" method="POST" class="contact-form">
+                                    
+                                        <input type="text" name="name" placeholder="Nimi *" aria-label="Nimi" required>
+                                    
+                                        <input type="tel" name="phone" placeholder="Puhelinnumero" aria-label="Puhelinnumero">
+                                    
+                                        <input type="email" name="email" placeholder="Sähköposti *" aria-label="Sähköposti" required>
+                                    
+                                        <select name="subject" aria-label="Aihe" required>
+                                            <option value="" disabled selected>Valitse aihe *</option>
+                                            <option value="membership">Jäsenyys</option>
+                                            <option value="event">Ilmoittautuminen tapahtumaan</option>
+                                            <option value="feedback">Palaute</option>
+                                            <option value="other">Muu asia</option>
+                                        </select>
+                                    
+                                        <textarea name="message" placeholder="Viesti *" aria-label="Viesti" required></textarea>
+                                    
+                                        <button type="submit" class="btn">Lähetä</button>
+                                    
+                                    </form>
+                                </div>
+                            </section>
+                        </div>
                     </div>
-                    <a href="form.html" class="btn">Ilmoittaudu</a>
                 </div>
-        
-                <div class="event-list-item">
-                    <div class="event-info">
-                        <h3>3D-suunnittelun alkeet</h3>
-                        <p>
-                            <time datetime="2026-04-20T12:00">
-                                Lauantai 20.4. klo 12.00 – 15.00
-                            </time>
-                        </p>
-                    </div>
-                    <a href="form.html" class="btn">Ilmoittaudu</a>
-                </div>
-        
-                <div class="event-list-item">
-                    <div class="event-info">
-                        <h3>Puutyöpaja</h3>
-                        <p>
-                            <time datetime="2026-06-05T15:00">
-                                Perjantai 5.6.2026 klo 15–19
-                            </time>
-                        </p>
-                    </div>
-                    <a href="form.html" class="btn">Ilmoittaudu</a>
-                </div>
-        
             </div>
         </section>
 
