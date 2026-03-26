@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merenranta Makers on raumalainen DIY-kerhotila, jonka tavoitteena on tarjota monipuolista harrastustoimintaa ja yhdessä tekemistä.">
+    <meta name="author" content="Merenranta Makers">
+
     <title>Galleria – Merenranta Makers</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,9 +21,11 @@
                         <img src="graphics/logo_dark.svg" alt="Merenranta Makers">
                     </a>
                 </div>
+            
                 <button class="mobile-menu-btn" aria-label="Avaa valikko">
-                    <img src="graphics/menu.svg" alt="">
+                    <img src="graphics/menu.svg" alt="Avaa valikko" class="menu-icon">
                 </button>
+
                 <nav class="main-nav" aria-label="Päävalikko">
                     <ul>
                         <li><a href="tilat.html">Tilat ja palvelut</a></li>
@@ -35,12 +40,16 @@
     </header>
 
     <main>
+
+        <!-- ---------- HERO / INTRODUCTION ----------  -->
         <section class="section hero bg-medium">
-            <img src="graphics/hero-galleria.jpeg" alt="Galleria" class="hero__bg">
+            <img src="graphics/hero-galleria.webp" alt="Merenranta Makers - Galleria" class="hero__bg" fetchpriority="high">
             <div class="container">
                 <h1>Galleria</h1>
             </div>
         </section>
+
+        <!-- ---------- SISÄLTÖ ---------- -->
 
         <section class="section bg-light">
             <div class="container">
@@ -49,41 +58,39 @@
 
                 <div class="gallery-grid">
                     <div class="gallery-item">
-                        <img src="images/3dprinter.jpg" alt="3D-tulostus" class="gallery-img lightbox-trigger">
+                        <img src="images/3dprinter.webp" alt="3D-tulostus" class="gallery-img lightbox-trigger" fetchpriority="high" decoding="async">
                     </div>
                 
                     <div class="gallery-item">
-                        <img src="images/wooddrilling.jpg" alt="Puun työstöä" class="gallery-img lightbox-trigger" loading="lazy">
+                        <img src="images/wooddrilling.webp" alt="Puun työstöä" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
                     </div>
                 
                     <div class="gallery-item">
-                        <img src="images/project.jpeg" alt="Yhteisprojekti" class="gallery-img lightbox-trigger" loading="lazy">
+                        <img src="images/project.webp" alt="Yhteisprojekti" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
                     </div>
 
                     <div class="gallery-item">
-                        <img src="images/consolecontrollers.jpg" alt="Peliohjaimia loungessa" class="gallery-img lightbox-trigger" loading="lazy">
+                        <img src="images/consolecontrollers.webp" alt="Peliohjaimia loungessa" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
                     </div>
 
                     <div class="gallery-item">
-                        <img src="images/laptopcoding.jpg" alt="Koodausta" class="gallery-img lightbox-trigger" loading="lazy">
+                        <img src="images/laptopcoding.webp" alt="Koodausta" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
                     </div>
 
                     <div class="gallery-item">
-                        <img src="images/solderingstation.jpg" alt="Juottamista" class="gallery-img lightbox-trigger" loading="lazy">
+                        <img src="images/solderingstation.webp" alt="Juottamista" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
                     </div>
 
                     <div class="gallery-item">
-                        <img src="images/toolstation.jpg" alt="Työkaluja" class="gallery-img lightbox-trigger" loading="lazy">
+                        <img src="images/toolstation.webp" alt="Työkaluja" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
                     </div>
-                </div>
-
                 </div>
             </div>
         </section>
 
         <section class="section bg-medium">
             <div class="container">
-                <h2 style="text-align: center; margin-bottom: var(--space-l);">Asiakaspalautteet</h2>
+                <h2>Asiakaspalautteet</h2>
         
                 <div class="testimonials-grid">
                     <blockquote class="testimonial-card">
@@ -125,84 +132,11 @@
         <img src="graphics/arrow_upward.svg" alt="Palaa alkuun">
     </a>
 
-    <script>
-        /* --- HAMPURILAISVALIKKO --- */
-            const menuBtn = document.querySelector(".mobile-menu-btn");
-            const nav = document.querySelector(".main-nav");
-            const menuImg = menuBtn?.querySelector("img");
+    <!-- javascript hampurilaisvalikolle ja palaa alkuun -painikkeelle -->
+    <script src="main.js"></script>
 
-            menuBtn?.addEventListener("click", () => {
-                const isOpen = nav.classList.toggle("active");
-                menuBtn.setAttribute("aria-expanded", isOpen);
-                if (menuImg) menuImg.src = isOpen ? "graphics/menu_close.svg" : "graphics/menu.svg";
-            });
-
-            /* --- PALAA YLÖS -NUOLIPAINIKE --- */
-            const backToTop = document.querySelector('.back-to-top');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 300) {
-                    backToTop?.classList.add('show');
-                } else {
-                    backToTop?.classList.remove('show');
-                }
-            });
-
-            /* --- LIGHTBOX (gallerian kuvakatselu) --- */
-            // Luodaan katseluikkunan elementit dynaamisesti
-            const lightboxOverlay = document.createElement('div');
-            lightboxOverlay.classList.add('lightbox-overlay');
-
-            const lightboxImage = document.createElement('img');
-            lightboxImage.classList.add('lightbox-image');
-
-            const lightboxClose = document.createElement('button');
-            lightboxClose.classList.add('lightbox-close');
-            lightboxClose.innerHTML = '&times;'; // HTML-koodi X-merkille
-
-            // Kootaan ikkuna ja lisätään se bodyyn
-            lightboxOverlay.appendChild(lightboxImage);
-            lightboxOverlay.appendChild(lightboxClose);
-            document.body.appendChild(lightboxOverlay);
-
-            // Haetaan kaikki klikattavat kuvat
-            const triggers = document.querySelectorAll('.lightbox-trigger');
-
-            // Avaa katseluikkuna
-            triggers.forEach(trigger => {
-                trigger.addEventListener('click', (e) => {
-                    const imageSrc = e.target.getAttribute('src');
-                    const imageAlt = e.target.getAttribute('alt');
-
-                    lightboxImage.setAttribute('src', imageSrc);
-                    lightboxImage.setAttribute('alt', imageAlt);
-                    lightboxOverlay.classList.add('active');
-
-                    // Estetään sivun rullaus, kun ikkuna on auki
-                    document.body.style.overflow = 'hidden';
-                });
-            });
-
-            // Sulje katseluikkuna
-            const closeLightbox = () => {
-                lightboxOverlay.classList.remove('active');
-                document.body.style.overflow = ''; // Palautetaan rullaus
-            };
-
-            lightboxClose.addEventListener('click', closeLightbox);
-            lightboxOverlay.addEventListener('click', (e) => {
-                // Suljetaan vain, jos klikataan taustaa, ei itse kuvaa
-                if (e.target === lightboxOverlay) {
-                    closeLightbox();
-                }
-            });
-
-            // Sulje Esc-näppäimellä
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && lightboxOverlay.classList.contains('active')) {
-                    closeLightbox();
-                }
-            });
-    </script>
+    <!-- javascript kuvien suurennukselle -->
+    <script src="lightbox.js"></script>
 </body>
 
 </html>

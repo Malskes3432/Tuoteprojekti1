@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tapahtumat – Merenranta Makers</title>
     <meta name="description" content="Tutustu Merenranta Makersin monipuolisiin DIY-tiloihin ja palveluihin Raumalla.">
+    <meta name="author" content="Merenranta Makers">
+
+    <title>Tapahtumat – Merenranta Makers</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,14 +16,15 @@
     <header class="site-header">
         <div class="container">
             <div class="header-grid">
-
                 <div class="logo">
                     <a href="index.html">
                         <img src="graphics/logo_dark.svg" alt="Merenranta Makers">
                     </a>
                 </div>
 
-                <button class="mobile-menu-btn" aria-label="Avaa valikko">☰</button>
+                <button class="mobile-menu-btn" aria-label="Avaa valikko">
+                    <img src="graphics/menu.svg" alt="Avaa valikko" class="menu-icon">
+                </button>
 
                 <nav class="main-nav" aria-label="Päävalikko">
                     <ul>
@@ -32,7 +35,6 @@
                         <li><a href="ota-yhteytta.html">Ota yhteyttä</a></li>
                     </ul>
                 </nav>
-
             </div>
         </div>
     </header>
@@ -41,7 +43,7 @@
 
         <!-- ---------- HERO / INTRODUCTION ----------  -->
         <section class="section hero bg-medium">
-            <img src="graphics/hero-tapahtumat.avif" alt="Merenranta Makers - diy-työtila" class="hero__bg">
+            <img src="graphics/hero-tapahtumat.webp" alt="Merenranta Makers - diy-työtila" class="hero__bg" fetchpriority="high">
             <div class="container">
                 <h1>Tapahtumat ja Kurssit</h1>
             </div>
@@ -53,10 +55,10 @@
             <div class="container">
                 <div class="content-intro">
 
-
                     <figure class="image-simple">
-                        <img src="images/peopleontable.avif" alt="Avoin työpajailta Merenranta Makersilla" loading="lazy">
+                        <img src="images/peopleontable.webp" alt="Avoin työpajailta Merenranta Makersilla" loading="lazy">
                     </figure>
+                    
                     <h2>Avoin työpajailta</h2>
                     
                     <p>
@@ -78,6 +80,18 @@
         <section class="section bg-medium">
             <div class="container">
                 <h2>Muut tapahtumat</h2>
+
+                <div class="event-list-item">
+                    <div class="event-info">
+                        <h3>3D-suunnittelun alkeet</h3>
+                        <p>
+                            <time datetime="2026-04-20T12:00">
+                                Lauantai 20.4. klo 12.00 – 15.00
+                            </time>
+                        </p>
+                    </div>
+                    <a href="ota-yhteytta.html" class="btn">Ilmoittaudu</a>
+                </div>
         
                 <div class="event-list-item">
                     <div class="event-info">
@@ -88,19 +102,7 @@
                             </time>
                         </p>
                     </div>
-                    <a href="form.html" class="btn">Ilmoittaudu</a>
-                </div>
-        
-                <div class="event-list-item">
-                    <div class="event-info">
-                        <h3>3D-suunnittelun alkeet</h3>
-                        <p>
-                            <time datetime="2026-04-20T12:00">
-                                Lauantai 20.4. klo 12.00 – 15.00
-                            </time>
-                        </p>
-                    </div>
-                    <a href="form.html" class="btn">Ilmoittaudu</a>
+                    <a href="ota-yhteytta.html" class="btn">Ilmoittaudu</a>
                 </div>
         
                 <div class="event-list-item">
@@ -112,7 +114,7 @@
                             </time>
                         </p>
                     </div>
-                    <a href="form.html" class="btn">Ilmoittaudu</a>
+                    <a href="ota-yhteytta.html" class="btn">Ilmoittaudu</a>
                 </div>
         
             </div>
@@ -146,36 +148,8 @@
     <a href="javascript:window.scrollTo(0,0)" class="back-to-top" aria-label="Palaa alkuun"><img
             src="graphics/arrow_upward.svg" alt="Palaa alkuun"></a>
 
-    <script>
-        /* --- HAMPURILAISVALIKKO --- */
-        const menuBtn = document.querySelector(".mobile-menu-btn");
-        const nav = document.querySelector(".main-nav");
-        const menuImg = menuBtn?.querySelector("img");
-
-        menuBtn?.addEventListener("click", () => {
-            const isOpen = nav.classList.toggle("active");
-            menuBtn.setAttribute("aria-expanded", isOpen);
-
-            // Vaihdetaan valikon kuvake tilan mukaan
-            if (isOpen) {
-                menuImg.src = "graphics/menu_close.svg";
-            } else {
-                menuImg.src = "graphics/menu.svg";
-            }
-        });
-
-        /* --- PALAA YLÖS -NUOLIPAINIKE --- */
-        const backToTop = document.querySelector('.back-to-top');
-
-        window.addEventListener('scroll', () => {
-            // Tarkistetaan rullaus ja elementin olemassaolo
-            if (window.scrollY > 300) {
-                backToTop?.classList.add('show');
-            } else {
-                backToTop?.classList.remove('show');
-            }
-        });
-    </script>
+<!-- javascript hampurilaisvalikolle ja palaa alkuun -painikkeelle-->
+<script src="main.js"></script>
 
 </body>
 

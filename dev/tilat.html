@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tilat ja palvelut – Merenranta Makers</title>
     <meta name="description" content="Tutustu Merenranta Makersin monipuolisiin DIY-tiloihin ja palveluihin Raumalla.">
+    <meta name="author" content="Merenranta Makers">
+
+    <title>Tilat ja palvelut – Merenranta Makers</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,14 +16,15 @@
     <header class="site-header">
         <div class="container">
             <div class="header-grid">
-
                 <div class="logo">
                     <a href="index.html">
                         <img src="graphics/logo_dark.svg" alt="Merenranta Makers">
                     </a>
                 </div>
 
-                <button class="mobile-menu-btn" aria-label="Avaa valikko">☰</button>
+                <button class="mobile-menu-btn" aria-label="Avaa valikko">
+                    <img src="graphics/menu.svg" alt="Avaa valikko" class="menu-icon">
+                </button>
 
                 <nav class="main-nav" aria-label="Päävalikko">
                     <ul>
@@ -32,22 +35,21 @@
                         <li><a href="ota-yhteytta.html">Ota yhteyttä</a></li>
                     </ul>
                 </nav>
-
             </div>
         </div>
     </header>
 
     <main>
 
-    <!-- ---------- HERO / INTRODUCTION ----------  -->
-    <section class="section hero bg-medium">
-        <img src="graphics/hero-tilat.jpg" alt="Merenranta Makers - diy-työtila" class="hero__bg">
-        <div class="container">
-            <h1>Tilat ja Palvelut</h1>
-        </div>
-    </section>
+        <!-- ---------- HERO / INTRODUCTION ----------  -->
+        <section class="section hero bg-medium">
+            <img src="graphics/hero-tilat.webp" alt="Merenranta Makers - työtilat ja palvelut" class="hero__bg" fetchpriority="high">
+            <div class="container">
+                <h1>Tilat ja Palvelut</h1>
+            </div>
+        </section>
 
-    <!-- ---------- SISÄLTÖ ---------- -->
+        <!-- ---------- SISÄLTÖ ---------- -->
 
         <section class="section bg-light">
             <div class="container">
@@ -77,7 +79,7 @@
                 <h2>Elektroniikkatila &amp; Lounge</h2>
 
                 <figure class="image-simple">
-                    <img src="images/3dprinter.jpg" alt="Elektroniikkatilan 3D-tulostin" loading="lazy">
+                    <img src="images/3dprinter.webp" alt="Elektroniikkatilan 3D-tulostin" loading="lazy">
                 </figure>               
 
                 <h3>Elektroniikkatilan resursseja</h3>
@@ -109,7 +111,7 @@
                 <h2>Puuverstas ja metallityöt</h2>
                 
                 <figure class="image-simple right">
-                    <img src="images/wooddrilling.jpg" alt="Puutyöt" loading="lazy">
+                    <img src="images/wooddrilling.webp" alt="Puutyöt" loading="lazy">
                 </figure>
 
                 <p>
@@ -165,7 +167,7 @@
                 <h2>Turvallisuus</h2>
 
                 <figure class="content-image-wide">
-                    <img src="images/project.jpeg" alt="Turvallisuus" loading="lazy">
+                    <img src="images/project.webp" alt="Turvallisuus" loading="lazy">
                 </figure>
                 <p>
                     Turvallisuus on meille ykkösasia. Jos jokin laite ei ole sinulle tuttu, autamme aloittamisessa enemmän kuin mielellämme. 
@@ -204,36 +206,8 @@
 <a href="javascript:window.scrollTo(0,0)" class="back-to-top" aria-label="Palaa alkuun"><img
         src="graphics/arrow_upward.svg" alt="Palaa alkuun"></a>
 
-<script>
-    /* --- HAMPURILAISVALIKKO --- */
-    const menuBtn = document.querySelector(".mobile-menu-btn");
-    const nav = document.querySelector(".main-nav");
-    const menuImg = menuBtn?.querySelector("img"); 
-
-    menuBtn?.addEventListener("click", () => {
-        const isOpen = nav.classList.toggle("active");
-        menuBtn.setAttribute("aria-expanded", isOpen);
-
-        // Vaihdetaan valikon kuvake tilan mukaan
-        if (isOpen) {
-            menuImg.src = "graphics/menu_close.svg";
-        } else {
-            menuImg.src = "graphics/menu.svg";
-        }
-    });
-
-    /* --- PALAA YLÖS -NUOLIPAINIKE --- */
-    const backToTop = document.querySelector('.back-to-top');
-
-    window.addEventListener('scroll', () => {
-        // Tarkistetaan rullaus ja elementin olemassaolo
-        if (window.scrollY > 300) {
-            backToTop?.classList.add('show');
-        } else {
-            backToTop?.classList.remove('show');
-        }
-    });
-</script>
+<!-- javascript hampurilaisvalikolle ja palaa alkuun -painikkeelle-->
+<script src="main.js"></script>
 
 </body>
 </html>
