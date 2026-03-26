@@ -26,3 +26,12 @@ window.addEventListener('scroll', () => {
         backToTop?.classList.remove('show');
     }
 });
+
+// Sulavampi klikkaus ja rullaus
+backToTop?.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});

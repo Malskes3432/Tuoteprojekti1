@@ -282,6 +282,14 @@ figcaption {
     transform: scaleX(1);
 }
 
+.main-nav a[aria-current="page"] {  /* Sivu jolla ollaan, korostetaan menussa */
+    color: var(--color-black);
+}
+
+.main-nav a[aria-current="page"]::after {
+    transform: scaleX(1);
+}
+
 .mobile-menu-btn {
     display: none;
     background: none;
