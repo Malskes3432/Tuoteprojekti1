@@ -1,127 +1,141 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galleria - Merenranta Makers</title>
+    <meta name="description" content="Merenranta Makers on raumalainen DIY-kerhotila, jonka tavoitteena on tarjota monipuolista harrastustoimintaa ja yhdessä tekemistä.">
+    <meta name="author" content="Merenranta Makers">
+
+    <title>Galleria – Merenranta Makers</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header class="site-header">
-    <div class="container header-flex">
-        <div class="logo">Merenranta Makers</div>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-grid">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="graphics/logo_dark.svg" alt="Merenranta Makers">
+                    </a>
+                </div>
+            
+                <button class="mobile-menu-btn" aria-label="Avaa valikko">
+                    <img src="graphics/menu.svg" alt="Avaa valikko" class="menu-icon">
+                </button>
 
-        <button class="mobile-menu-btn" aria-label="Avaa valikko">☰</button>
-
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">ETUSIVU</a></li>
-                <li><a href="tilat.html">TILAT JA PALVELUT</a></li>
-                <li><a href="tapahtumat.html">TAPAHTUMAT</a></li>
-                <li><a href="jäsenyys.html">JÄSENYYS</a></li>
-                <li><a href="galleria.html">GALLERIA</a></li>
-                <li><a href="form.html">OTA YHTEYTTÄ</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<main>
-
-<section class="content-section bg-grey">
-    <div class="container text-center">
-        <h1>Projektistamme</h1>
-        <p>
-           Merenranta Makers on luova ja yhteisöllinen työtila, jossa yhdistyvät teknologia, käsityö ja yhdessä tekeminen. 
-           Tilassamme voit työskennellä metallin, puun, elektroniikan sekä digitaalisten projektien parissa modernien työkalujen ja laitteiden avulla.
-           Projektimme tavoitteena on tarjota inspiroiva ympäristö oppimiselle, kokeilemiselle ja uusien ideoiden toteuttamiselle. 
-           Haluamme tuoda yhteen ihmisiä, jotka ovat kiinnostuneita rakentamisesta, suunnittelusta ja uuden oppimisesta – kokemustasosta riippumatta.
-        </p>
-    </div>
-</section>
-
-<section class="content-section bg-white">
-    <div class="container">
-        <h2 class="text-center">Kuvagalleria</h2>
-
-        <div class="gallery-scroll">
-            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758" alt="Workshop">
-            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc" alt="Electronics">
-            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1" alt="Computer work">
-            <img src="https://static.thefabricator.com/a/staying-safe-during-grinding-1710259186.jpg" alt="Metal work">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Team work">
-            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Wood workshop">
-            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789" alt="Tools">
-            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122" alt="Workshop tools">
-            <img src="https://us.images.westend61.de/0001264224pw/close-up-of-man-drilling-wood-with-a-drill-machine-in-a-workshop-CAVF64109.jpg" alt="Drilling wood">
-            <img src="https://res.cloudinary.com/rs-designspark-live/image/upload/c_limit%2Cw_829/f_auto/v1/article/20211008112711_IMG_0287_9225eb0642d48f4dfa5e805956a3046793e63e60" alt="Electronics board">
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Programming">
-            <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f" alt="Laptop work">
-        </div>
-    </div>
-</section>
-
-<section class="content-section bg-grey">
-    <div class="container">
-        <h2 class="text-center">Asiakaspalautteet</h2>
-
-        <div class="reviews-grid">
-            <div class="review-card">
-                <p>
-                    "Todella hyvä työtila ja mukava yhteisö.
-                    Sain paljon apua omaan projektiini!"
-                </p>
-                <strong>– Mikko</strong>
-            </div>
-
-            <div class="review-card">
-                <p>
-                    "Paljon työkaluja ja mahdollisuuksia.
-                    Suosittelen kaikille, jotka haluavat tehdä projekteja."
-                </p>
-                <strong>– Laura</strong>
-            </div>
-
-            <div class="review-card">
-                <p>
-                    "Paras makerspace missä olen käynyt.
-                    Tulen varmasti uudestaan."
-                </p>
-                <strong>– Jari</strong>
+                <nav class="main-nav" aria-label="Päävalikko">
+                    <ul>
+                        <li><a href="tilat.html">Tilat ja palvelut</a></li>
+                        <li><a href="tapahtumat.html">Tapahtumat</a></li>
+                        <li><a href="jasenyys.html">Jäsenyys</a></li>
+                        <li><a href="galleria.html" aria-current="page" aria-label="Galleria">Galleria</a></li>
+                        <li><a href="ota-yhteytta.html">Ota yhteyttä</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </div>
-</section>
+    </header>
 
-</main>
+    <main>
 
-<footer class="site-footer">
-    <div class="container footer-flex">
-        <div class="logo bg-white-logo">Merenranta Makers</div>
-        <p>Tilat käytettävissä klo 8–22 joka päivä</p>
-        <address>
-            Rantakatu 12<br>
-            33101 Tampere
-        </address>
-    </div>
-</footer>
+        <!-- ---------- HERO / INTRODUCTION ----------  -->
+        <section class="section hero bg-medium">
+            <img src="graphics/hero-galleria.webp" alt="Merenranta Makers - Galleria" class="hero__bg" fetchpriority="high">
+            <div class="container">
+                <h1>Galleria</h1>
+            </div>
+        </section>
 
-<script>
-const btn = document.querySelector(".mobile-menu-btn");
-const nav = document.querySelector(".main-nav");
+        <!-- ---------- SISÄLTÖ ---------- -->
 
-if(btn){
-    btn.addEventListener("click", () => {
-        if(nav.style.display === "block"){
-            nav.style.display = "none";
-        } else {
-            nav.style.display = "block";
-        }
-    });
-}
-</script>
+        <section class="section bg-light">
+            <div class="container">
+                <h2>Kuvia pajalta ja projekteista</h2>
+                <p>Kurkista Merenranta Makersin arkeen.</p>
 
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/3dprinter.webp" alt="3D-tulostus" class="gallery-img lightbox-trigger" fetchpriority="high" decoding="async">
+                    </div>
+                
+                    <div class="gallery-item">
+                        <img src="images/wooddrilling.webp" alt="Puun työstöä" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
+                    </div>
+                
+                    <div class="gallery-item">
+                        <img src="images/project.webp" alt="Yhteisprojekti" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/consolecontrollers.webp" alt="Peliohjaimia loungessa" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/laptopcoding.webp" alt="Koodausta" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/solderingstation.webp" alt="Juottamista" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/toolstation.webp" alt="Työkaluja" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-medium">
+            <div class="container">
+                <h2>Asiakaspalautteet</h2>
+        
+                <div class="testimonials-grid">
+                    <blockquote class="testimonial-card">
+                        <p>"Todella hyvä työtila ja mukava yhteisö. Sain paljon apua omaan projektiini!"</p>
+                        <cite>– Mikko</cite>
+                    </blockquote>
+        
+                    <blockquote class="testimonial-card">
+                        <p>"Paljon työkaluja ja mahdollisuuksia. Suosittelen kaikille, jotka haluavat tehdä projekteja."</p>
+                        <cite>– Laura</cite>
+                    </blockquote>
+        
+                    <blockquote class="testimonial-card">
+                        <p>"Paras makerspace missä olen käynyt. Tulen varmasti uudestaan."</p>
+                        <cite>– Jari</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="graphics/logo_white.svg" alt="Merenranta Makers">
+                    </a>
+                </div>
+                <div class="footer-tagline">Tilat avoinna jäsenille klo 8–22 joka päivä</div>
+                <div class="footer-address">
+                    <address>Rantakatu 12<br>26100 Rauma</address>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top" aria-label="Palaa alkuun"><img src="graphics/arrow_upward.svg"
+            alt="Palaa alkuun"></a>
+
+    <!-- javascript hampurilaisvalikolle ja palaa alkuun -painikkeelle -->
+    <script src="main.js"></script>
+
+    <!-- javascript kuvien suurennukselle -->
+    <script src="lightbox.js"></script>
 </body>
+
 </html>
