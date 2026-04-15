@@ -7,7 +7,7 @@
     /* Värit */
    --color-black: #000000;
     --color-white: #ffffff;
-    --color-bg-light: #e6e6e6;
+    --color-bg-light: #efefef;
     --color-bg-med-light: #F9F8F4;
     --color-bg-medium: #b3b3b3;
     --color-bg-dark: #221814;
@@ -39,9 +39,9 @@
 /* -------------------------------
     APULUOKAT TAUSTAVÄREILLE
    ------------------------------- */
-.bg-grey { background-color: var(--color-bg-light); }
-.bg-cream { background-color: var(--color-bg-med-light); }
-.bg-dark-brown { background-color: var(--color-bg-dark); }
+.bg-light { background-color: var(--color-bg-light); }
+.bg-medium { background-color: var(--color-bg-med-light); }
+.bg-dark { background-color: var(--color-bg-dark); }
 
 /* -------------------------------
     RESET
