@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merenranta Makers on raumalainen DIY-kerhotila, jonka tavoitteena on tarjota monipuolista harrastustoimintaa ja yhdessä tekemistä.">
+    <meta name="author" content="Merenranta Makers">
+
+    <title>Galleria – Merenranta Makers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-grid">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="graphics/logo_dark.svg" alt="Merenranta Makers">
+                    </a>
+                </div>
+            
+                <button class="mobile-menu-btn" aria-label="Avaa valikko">
+                    <img src="graphics/menu.svg" alt="Avaa valikko" class="menu-icon">
+                </button>
+
+                <nav class="main-nav" aria-label="Päävalikko">
+                    <ul>
+                        <li><a href="tilat.html">Tilat ja palvelut</a></li>
+                        <li><a href="tapahtumat.html">Tapahtumat</a></li>
+                        <li><a href="jasenyys.html">Jäsenyys</a></li>
+                        <li><a href="galleria.html" aria-current="page" aria-label="Galleria">Galleria</a></li>
+                        <li><a href="ota-yhteytta.html">Ota yhteyttä</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ---------- HERO / INTRODUCTION ----------  -->
+        <section class="section hero bg-medium">
+            <img src="graphics/hero-galleria.webp" alt="Merenranta Makers - Galleria" class="hero__bg" fetchpriority="high">
+            <div class="container">
+                <h1>Galleria</h1>
+            </div>
+        </section>
+
+        <!-- ---------- SISÄLTÖ ---------- -->
+
+        <section class="section bg-light">
+            <div class="container">
+                <h2>Kuvia pajalta ja projekteista</h2>
+                <p>Kurkista Merenranta Makersin arkeen.</p>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/3dprinter.webp" alt="3D-tulostus" class="gallery-img lightbox-trigger" fetchpriority="high" decoding="async">
+                    </div>
+                
+                    <div class="gallery-item">
+                        <img src="images/wooddrilling.webp" alt="Puun työstöä" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
+                    </div>
+                
+                    <div class="gallery-item">
+                        <img src="images/project.webp" alt="Yhteisprojekti" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/consolecontrollers.webp" alt="Peliohjaimia loungessa" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/laptopcoding.webp" alt="Koodausta" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/solderingstation.webp" alt="Juottamista" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/toolstation.webp" alt="Työkaluja" class="gallery-img lightbox-trigger" loading="lazy" decoding="async">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="graphics/logo_white.svg" alt="Merenranta Makers">
+                    </a>
+                </div>
+                <div class="footer-tagline">Tilat avoinna jäsenille klo 8–22 joka päivä</div>
+                <div class="footer-address">
+                    <address>Rantakatu 12<br>26100 Rauma</address>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top" aria-label="Palaa alkuun"><img src="graphics/arrow_upward.svg"
+            alt="Palaa alkuun"></a>
+
+    <!-- javascript hampurilaisvalikolle ja palaa alkuun -painikkeelle -->
+    <script src="main.js"></script>
+
+    <!-- javascript kuvien suurennukselle -->
+    <script src="lightbox.js"></script>
+</body>
+
+</html>
