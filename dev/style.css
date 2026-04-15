@@ -7,11 +7,11 @@
     /* Värit */
    --color-black: #000000;
     --color-white: #ffffff;
-    --color-bg-grey: #e6e6e6;
-    --color-bg-dark-grey: #b3b3b3;
-    --color-bg-cream: #F9F8F4;
-    --color-bg-brown: #221814;
-    --color-blue: #010163;
+    --color-bg-light: #e6e6e6;
+    --color-bg-med-light: #F9F8F4;
+    --color-bg-medium: #b3b3b3;
+    --color-bg-dark: #221814;
+    --color-blue: #0101ee;
     
     /* Korostusvärit*/
     --color-accent-primary: var(--color-blue); 
@@ -39,9 +39,9 @@
 /* -------------------------------
     APULUOKAT TAUSTAVÄREILLE
    ------------------------------- */
-.bg-grey { background-color: var(--color-bg-grey); }
-.bg-cream { background-color: var(--color-bg-cream); }
-.bg-dark-brown { background-color: var(--color-bg-brown); }
+.bg-grey { background-color: var(--color-bg-light); }
+.bg-cream { background-color: var(--color-bg-med-light); }
+.bg-dark-brown { background-color: var(--color-bg-dark); }
 
 /* -------------------------------
     RESET
@@ -502,8 +502,8 @@ figcaption {
     FOOTER
    ------------------------------- */
 .site-footer {
-    background-color: var(--color-bg-brown);
-    color: var(--color-bg-cream);
+    background-color: var(--color-bg-dark);
+    color: var(--color-bg-med-light);
     padding: 40px 0;
     font-size: 0.875rem;
 }
