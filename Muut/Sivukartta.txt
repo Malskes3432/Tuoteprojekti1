@@ -23,7 +23,9 @@ Jäsenyys
 
 Ota yhteyttä
     lomake (kysymykset, ilmoittautuminen tapahtumaan, ideat)
-    varauskalenteri? (ulkoinen järjestelmä)
-    Karttalinkki ja saapumisohjeet (julkinen liikenne, pysäköinti…)
+
+
+---
+Footer: yhteystiedot ja aukioloaika
 
 
