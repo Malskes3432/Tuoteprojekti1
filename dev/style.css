@@ -1,50 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* -------------------------------
-    DESIGN / VALMIIT MUOTOILUOSAT
+             MUUTTUJAT
    ------------------------------- */
 :root {
-    --color-black: #000000;
+    /* Värit */
+   --color-black: #000000;
     --color-white: #ffffff;
-    --color-bg-light: #F9F8F4;
-    --color-bg-medium: #c7c2b9;
+    --color-bg-light: #efefef;
+    --color-bg-med-light: #F9F8F4;
+    --color-bg-medium: #b3b3b3;
     --color-bg-dark: #221814;
-    --color-accent-primary: #0000ff;
-    --color-accent-secondary: #42A878;
+    --color-blue: #0101ee;
+    
+    /* Korostusvärit*/
+    --color-accent-primary: var(--color-blue); 
+    --color-accent-secondary: var(--color-bg-brown);
 
-    --space-s: 16px;
+    /* Fontit */
+    --font-text: 'Lato', sans-serif;
+    --font-header: 'Montserrat', sans-serif;
+
+    /* Muut asetukset */
+   --space-s: 16px;
     --space-m: 24px;
     --space-l: 40px;
     --space-xl: 64px;
-
-    --container-max: 1280px;
+    --container-max: 1100px;
     --container-pad: var(--space-l);
-    --font-text: "Inter", sans-serif;
-    --font-header: "Montserrat", sans-serif;
 
     --radius-s: 8px;
-    --radius-m: 16px;
-    --radius-pill: 999px;
-    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    --shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.14);
-
+    --radius-m: 24px; 
+    --radius-pill: 40px; 
+    --shadow: 0 20px 40px rgba(0,0,0,0.08);
     --ease: 0.25s ease;
 }
 
 /* -------------------------------
-    SISÄLTÖOSIEN TAUSTAVÄRILUOKAT
+    APULUOKAT TAUSTAVÄREILLE
    ------------------------------- */
-.bg-light {
-    background-color: var(--color-bg-light);
-}
-
-.bg-medium {
-    background-color: var(--color-bg-medium);
-}
-
-.bg-dark {
-    background-color: var(--color-bg-dark);
-}
+.bg-light { background-color: var(--color-bg-light); }
+.bg-medium { background-color: var(--color-bg-med-light); }
+.bg-dark { background-color: var(--color-bg-dark); }
 
 /* -------------------------------
     RESET
@@ -325,17 +322,20 @@ figcaption {
 }
 
 /* Hero-osion taustakuva */
+
 .hero__bg {
     position: absolute;
     inset: -10px;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: blur(6px);  /* sumennus helpottaa tekstin luettavuutta */
+    filter: blur(6px);
+    /* sumennus helpottaa tekstin luettavuutta */
     z-index: 0;
 }
 
-.hero::after {  /* hero-taustan tummennus */
+.hero::after {
+    /* hero-taustan tummennus */
     content: "";
     position: absolute;
     inset: 0;
@@ -348,7 +348,6 @@ figcaption {
     hyphens: none;
     -webkit-hyphens: none;
 }
-
 /* -------------------------------
     TAPAHTUMAT-GRID (myös jäsenyys-sivu)
    ------------------------------- */
@@ -504,9 +503,9 @@ figcaption {
     FOOTER
    ------------------------------- */
 .site-footer {
-    background: var(--color-bg-dark);
-    padding-block: var(--space-l);
-    color: var(--color-white);
+    background-color: var(--color-bg-dark);
+    color: var(--color-bg-med-light);
+    padding: 40px 0;
     font-size: 0.875rem;
 }
 
@@ -559,7 +558,7 @@ address {
    ------------------------------- */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* Vaihdoin 4 otsikkoihin */
     gap: var(--space-s);
 }
 
