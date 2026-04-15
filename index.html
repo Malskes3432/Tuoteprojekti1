@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fi">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merenranta Makers on raumalainen DIY-kerhotila, jonka tavoitteena on tarjota monipuolista harrastustoimintaa ja yhdessä tekemistä.">
+    <meta name="author" content="Merenranta Makers">
+    
+    <title>Merenranta Makers - DIY-kerhotila Raumalla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ---------- HEADER ---------- -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-grid">
+                <div class="logo">
+                    <a href="index.html" aria-label="Merenranta Makers Etusivu" aria-current="page">
+                        <img src="graphics/logo_dark.svg" alt="Merenranta Makers">
+                    </a>
+                </div>
+
+                    <button class="mobile-menu-btn" aria-label="Avaa valikko">
+                        <img src="graphics/menu.svg" alt="Avaa valikko" class="menu-icon">
+                    </button>
+
+                <nav class="main-nav" aria-label="Päävalikko">
+                    <ul>
+                        <li><a href="tilat.html">Tilat ja palvelut</a></li>
+                        <li><a href="tapahtumat.html">Tapahtumat</a></li>
+                        <li><a href="jasenyys.html">Jäsenyys</a></li>
+                        <li><a href="galleria.html">Galleria</a></li>
+                        <li><a href="ota-yhteytta.html">Ota yhteyttä</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ---------- HERO / INTRODUCTION ----------  -->
+        <section class="section hero bg-medium">
+            <img src="graphics/hero-index.webp" alt="Merenranta Makers - diy-työtila" class="hero__bg" fetchpriority="high">
+            <div class="container">
+                <h1>Mikä Merenranta Makers?</h1>
+                <p>
+                    Merenranta Makers on yhteisöllinen luova työtila, jossa voit oppia uutta,
+                    toteuttaa omia projekteja ja tavata muita tekemisestä innostuneita ihmisiä.
+                    Tarjoamme tiloja käsitöihin, pienrakenteluun, digitaaliseen suunnitteluun
+                    ja yhteisiin tapahtumiin kaiken tasoisille tekijöille.
+                </p>
+            </div>
+        </section>
+
+        <!-- ---------- TAPAHTUMAT ---------- -->
+        <section class="section bg-light">
+            <div class="container">
+                <h2>Tulevat tapahtumat</h2>
+
+                <div class="events-grid">
+
+                    <article class="event-card">
+                        <img
+                            src="images/peopleontable.webp"
+                            alt="Avoin työpajailta"
+                            class="event-card__image"
+                        >
+                        <div class="event-card__content">
+                            <h3>Avoin työpajailta</h3>
+                            <time datetime="2026-04-18T17:00">
+                                Torstai 18.4. klo 17.00 – 20.00
+                            </time>
+                            <a href="tapahtumat.html" class="btn">Lue lisää</a>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <img
+                            src="images/3dprinter.webp"
+                            alt="3D-suunnittelun alkeet"
+                            class="event-card__image"
+                        >
+                        <div class="event-card__content">
+                            <h3>3D-suunnittelun alkeet</h3>
+                            <time datetime="2026-04-20T12:00">
+                                Lauantai 20.4. klo 12.00 – 15.00
+                            </time>
+                            <a href="tapahtumat.html" class="btn">Lue lisää</a>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <img
+                            src="images/office.webp"
+                            alt="Yhteisöilta uusille jäsenille"
+                            class="event-card__image"
+                        >
+                        <div class="event-card__content">
+                            <h3>Yhteisöilta uusille jäsenille</h3>
+                            <time datetime="2026-04-24T18:00">
+                                Keskiviikko 24.4. klo 18.00 – 19.30
+                            </time>
+                            <a href="tapahtumat.html" class="btn">Lue lisää</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- SISÄLTÖOSA 2, CALL TO ACTION ----------  -->
+        <section class="section bg-medium">
+            <div class="container">
+                <h2>Kiinnostuitko? Tule tutustumaan!</h2>
+                <p>
+                    Järjestämme säännöllisesti avoimia työpajailtoja, joihin myös muut kuin jäsenet pääsevät osallistumaan. Tiloihin voi tulla tutustumaan myös muuna sovittuna ajankohtana.
+                </p>
+                <p>
+                    <a href="ota-yhteytta.html">Ilmoittaudu yhteydenottolomakkeella</a>, niin esittelemme sinulle Merenranta Makersin mahdollisuudet!
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ---------- FOOTER ---------- -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="graphics/logo_white.svg" alt="Merenranta Makers">
+                    </a>
+                </div>
+
+                <div class="footer-tagline">
+                    <p>
+                        Tilat avoinna jäsenille joka päivä klo 8–22
+                    </p>
+                </div>
+
+                <div class="footer-address">
+                    <address>
+                        Rantakatu 12<br>
+                        26100 Rauma
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top" aria-label="Palaa alkuun"><img
+            src="graphics/arrow_upward.svg" alt="Palaa alkuun"></a>
+
+    <!-- javascript hampurilaisvalikolle ja palaa alkuun -painikkeelle-->
+    <script src="main.js"></script>
+
+</body>
+</html>
