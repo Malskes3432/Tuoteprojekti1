@@ -382,13 +382,13 @@ figcaption {
 .event-card__content {
     padding: var(--space-s);
     display: grid;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: 3rem auto auto auto;
     gap: var(--space-s);
     text-align: center;
 }
 
 .event-card__content mark {
-    background-color: var(--color-accent-secondary);
+    background-color: var(--color-blue);
     color: var(--color-white);
     padding-block: 12px;
     align-items: center;
